@@ -617,16 +617,16 @@ class FlexboxHelper {
                 sumCrossSize = -flexLine.getCrossSize();
                 reachedToIndex = true;
             }
-            if (sumCrossSize > needsCalcAmount && reachedToIndex) {
-                // Stop the calculation if the sum of cross size calculated reached to the point
-                // beyond the needsCalcAmount value to avoid unneeded calculation in a
-                // RecyclerView.
-                // To be precise, the decoration length may be added to the sumCrossSize,
-                // but we omit adding the decoration length because even without the decorator
-                // length, it's guaranteed that calculation is done at least beyond the
-                // needsCalcAmount
-                break;
-            }
+//            if (sumCrossSize > needsCalcAmount && reachedToIndex) {
+//                // Stop the calculation if the sum of cross size calculated reached to the point
+//                // beyond the needsCalcAmount value to avoid unneeded calculation in a
+//                // RecyclerView.
+//                // To be precise, the decoration length may be added to the sumCrossSize,
+//                // but we omit adding the decoration length because even without the decorator
+//                // length, it's guaranteed that calculation is done at least beyond the
+//                // needsCalcAmount
+//                break;
+//            }
         }
 
         result.mChildState = childState;
