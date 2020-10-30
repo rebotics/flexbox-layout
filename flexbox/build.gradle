@@ -18,6 +18,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply from: 'maven.gradle'
 apply from: 'bintray.gradle'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.deneath'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
