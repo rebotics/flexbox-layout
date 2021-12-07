@@ -1196,6 +1196,11 @@ public class FlexboxLayoutManager extends RecyclerView.LayoutManager implements 
         if (firstFoundLinePosition == NO_POSITION) {
             return null;
         }
+
+        if (firstFoundLinePosition >= mFlexLines.size()) {
+            return null;
+        }
+
         FlexLine firstFoundLine = mFlexLines.get(firstFoundLinePosition);
         return findFirstReferenceViewInLine(firstFound, firstFoundLine);
     }
